@@ -1,0 +1,3 @@
+MOISTURE_EVENTS_DATA_FOLDER_NAME = "moisture-data"
+MOISTURE_EVENTS_STORE_FILE_NAME_PREFIX = "moisture-event-file_"
+EVENTS_COUNTER_FILE_NAME = "event_count.txt"
