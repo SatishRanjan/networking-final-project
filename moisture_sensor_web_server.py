@@ -66,13 +66,6 @@ GPIO.add_event_detect(channel, GPIO.BOTH, bouncetime=300)
 GPIO.add_event_callback(channel, callback)
 
 svr_socket = None
-def process_request(client_socket_conn, client_address, water_detected):
-    print("Processing client request.")
-    data = client_socket_conn.recv(1024)
-    msg = data.decode()
-    print("client message: " + msg)
-    client_socket_conn.sendall(bytes(msg.upper() + water_detected))
-    client_socket_conn.close()
 
 print("The web server is runnig in the {0} mode on port {1}".format(server_mode, PORT))
 
